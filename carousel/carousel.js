@@ -15,7 +15,7 @@ function moveToPrevSlide() {
   hideAll();
 
   if (cellNumber === 0) {
-    cellNumber = totalSlides-1;
+    cellNumber = totalSlides - 1;
   } else {
     cellNumber--;
   }
@@ -23,7 +23,7 @@ function moveToPrevSlide() {
   slides[cellNumber].classList.add("visible");
 }
 function moveToNextSlide() {
-  if (cellNumber === totalSlides-1) {
+  if (cellNumber === totalSlides - 1) {
     cellNumber = 0;
   } else {
     cellNumber++;
